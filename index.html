@@ -5,7 +5,72 @@
       <title>Space Ripples Reveal Big Bang's Smoking Gun - The New York Times</title>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
       <style>
+        * {
+          margin: 0;
+          padding: 0;
+          border: none;
+          box-sizing: border-box;
+        }
+      </style>
+      <style>
+        nav {
+          display: grid;
+          grid-template-columns: auto 1fr auto;
+          justify-items: center;
+          align-items: center;
+          width: 100%;
+          padding: 10px 15px 6px 15px;
+          border-bottom: 1px solid #e2e2e2;
+        }
 
+        .login {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr auto;
+          justify-items: right;
+          gap: 5px;
+          padding: 8px 8px 0 0;
+          font-size: 0.7rem;
+          text-decoration: none;
+        }
+
+        /* .login a:nth-child(1) {
+          padding-right: 5px;
+          border-right: 1px solid #e2e2e2;
+        }
+
+        .login a {
+          text-decoration: none;
+          color: #52a5e3;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .login a:visited {
+          color: #52a5e3;
+        } */
+
+        .container {
+          display: grid;
+          grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
+          grid-auto-flow: column;
+          row-gap: 20px;
+        }
+
+        .container > * {
+          grid-column: 2 / -2;
+        }
+
+        .image {
+          grid-column: 1 / -1;
+        }
+
+        .image-small {
+          grid-column: 2 / -2;
+        }
+
+        .image img {
+          width: 100%;
+        }
       </style>
   </head>
   <body>
@@ -20,8 +85,8 @@
         <a href='#'>Log in</a>
       </div>
     </div>
-    <main class='container'>
-      <header>
+    <main>
+      <article class='container'>
         <h1>Space Ripples Reveal Big Bang's Smoking Gun</h1>
         <div class='social'>
             <i class='fab fa-facebook-f'></i>
@@ -43,8 +108,6 @@
         </div>
         <p class='author'><strong>By Dennis Overbye</strong></p>
         <p class='date'>March 17, 2014</p>
-      </header>
-      <article>
         <p>
           CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a year’s appointment at Stanford, stayed up late with his notebook and equations, venturing far beyond the world of known physics.
         </p>
@@ -171,7 +234,7 @@
         <p>
           “The South Pole is the closest you can get to space and still be on the ground,” Dr. Kovac said. He has been there 23 times, he said, wintering over in 1994. “I’ve been hooked ever since,” he said.
         </p>
-        <section class='image'>
+        <section class='image image-small'>
           <img src='./assets/photo3'>
           <caption>
             The Bicep2 telescope, in the foreground, was used to detect the faint spiraling gravity patterns — the signature of a universe being wrenched violently apart at its birth.
